@@ -4,17 +4,15 @@ body {
     background-color: #f8f8f8;
 }
 
+.header {
+    background-color: #fff;
+}
 
 .container {
     width: 1400px;
     margin: 0 auto;
 }
 
-/* Navigation Styles */
-
-.navigation-items {
-    background-color: #ffffff;
-}
 
 /* Upper Navigation Bar Styles */
 
@@ -262,6 +260,10 @@ form {
     color: rgb(158, 158, 158);
     font-size: 0.75rem;
     margin-left: 1.5rem;
+}
+
+.date p {
+    margin: 0;
 }
 
 .lower-search-btn {
