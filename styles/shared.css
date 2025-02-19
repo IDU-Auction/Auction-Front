@@ -214,6 +214,7 @@ form {
     color: white;
     border: none;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 .sign-in-btn:hover {
@@ -240,6 +241,7 @@ form {
     box-sizing: border-box;
     border-radius: 3px;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .lower-navigation__item:hover {

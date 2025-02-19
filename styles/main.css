@@ -18,7 +18,7 @@
     background: #ffffff;
     border-radius: 7px;
     transition: all 0.5s ease-in-out 0s;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .category-item:hover {
@@ -32,6 +32,8 @@
 .category-title {
     color: #023581;
     font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 300;
 }
 
 .category-icon {
@@ -47,17 +49,22 @@
 }
 
 .hide-category {
-    display: none;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out, visibility 0s;
 }
 
 .category-button {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    
+    border-bottom: 1px solid #999;
+    position: relative;
 }
 
 .category-toggle {
+    position: absolute;
+    top: -20px;
     cursor: pointer;
     text-align: center;
     font-size: 16px;
@@ -65,7 +72,7 @@
     color: #023581;
     background: #f0f0f0;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 30px;
     border: 1px solid #023581;
     transition: all 0.3s ease-in-out;
 }
@@ -76,7 +83,7 @@
 }
 
 .show-less {
-    display: none; /* Hide "Show Less" by default */
+    display: none;
 }
 
 .category-toggle i {

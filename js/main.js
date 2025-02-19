@@ -1,17 +1,13 @@
 $(document).ready(function () {
-    $(".hide-category").hide(); // Hide 19 categories initially
+    $(".show-more").click(function () {
+        $(".hide-category").css({"visibility": "visible", "height": "auto"});
+        $(".show-more").hide();
+        $(".show-less").show();
+    });
 
-    $(".category-toggle").click(function () {
-        if ($(".hide-category").is(":visible")) {
-            // Hide extra categories
-            $(".hide-category").slideUp();
-            $(".show-more").show();
-            $(".show-less").hide();
-        } else {
-            // Show all categories
-            $(".hide-category").slideDown();
-            $(".show-more").hide();
-            $(".show-less").show();
-        }
+    $(".show-less").click(function () {
+        $(".hide-category").css({"visibility": "hidden", "height": "0"});
+        $(".show-less").hide();
+        $(".show-more").show();
     });
 });
