@@ -8,93 +8,355 @@
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/shared.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <!-- Header section -->
-                <header class="header">
-                    <div class="container">
-                        <nav class="navigation-items">
-                            <div class="upper-navigation__items">
-                               <div class="upper-left-navigation-items">
-                                    <div class="main-logo">
-                                        <a href="index.html">
-                                            <img src="./images/header-images/main-logo.png" alt="Main Logo">
-                                        </a>
-                                    </div>
-                                    <div class="search-bar">
-                                        <form action="#" method="GET">
-                                            <input type="text" name="search" class="search-input" id="search" placeholder="Lot number or property name">
-                                            <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="upper-right-navigation-items">
-                                    <a href="index.html"><img src="./images/header-images/ipo.png" alt="IPO Partner image"></a>
-                                    <a href="index.html"><img src="./images/header-images/e-auction-shop.png" alt="E-Auction-Shop image"></a>
-                                    <a href="index.html"><img src="./images/header-images/assistant.png" alt="Assistant image"></a>
-                                    <span class="demo-version">
-                                        <i class="fa-solid fa-laptop"></i>
-                                        Demo
-                                    </span>
-                                    <span class="eyeglasses-img">
-                                        <img src="./images/header-images/eyeglasses.png" alt="eyeglasses">
-                                    </span>
-                                    <span class="language">
-                                        <ul class="main-language">
-                                            <li>EN
-                                                <i class="fa-solid fa-caret-down"></i>
-                                                <ul class="inner-language"> 
-                                                    <li class="russian-language">RU</li>
-                                                    <li class="uzbek-language">UZ</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </span>
-                                    <span class="reg-button"><a href="#">Register</a></span>
-                                    <button type="button" class="sign-in-btn">Sign in</button>
-                                </div>
+        <div class="container">
+            <header class="header">
+                <nav class="navigation-items">
+                    <div class="upper-navigation__items">
+                       <div class="upper-left-navigation-items">
+                            <div class="main-logo">
+                                <a href="index.html">
+                                    <img src="./images/header-images/main-logo.png" alt="Main Logo">
+                                </a>
                             </div>
-                            <ul class="lower-navigation__items">
-                                <li class="lower-navigation__item">
-                                    <a href="#">Lots</a>
-                                </li>
-                                <li class="lower-navigation__item">
-                                    <a href="#">Help</a>
-                                </li>
-                                <li class="lower-navigation__item">
-                                    <a href="#">Aboute Trade</a>
-                                </li>
-                                <li class="lower-navigation__item">
-                                    <a href="#">Preferences</a>
-                                </li>
-                                <li class="lower-navigation__item">
-                                    <a href="#">Interactive services</a>
-                                </li>
-                                <li class="lower-navigation__item">
-                                    <a href="#">Corporate governance</a>
-                                </li>
-                                <li class="lower-navigation__item">
-                                    <a href="#">News</a>
-                                </li>
-                                <li class="lower-navigation__item">
-                                    <a href="#">Contacts</a>
-                                </li>
-                                <div class="date">
-                                    <p id="currentDateTime"></p>
-                                </div>
-                                <div class="lower-search-btn">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </div>
-                            </ul>
-                        </nav>
+                            <div class="search-bar">
+                                <form action="#" method="GET">
+                                    <input type="text" name="search" class="search-input" id="search" placeholder="Lot number or property name">
+                                    <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="upper-right-navigation-items">
+                            <a href="index.html"><img src="./images/header-images/ipo.png" alt="IPO Partner image"></a>
+                            <a href="index.html"><img src="./images/header-images/e-auction-shop.png" alt="E-Auction-Shop image"></a>
+                            <a href="index.html"><img src="./images/header-images/assistant.png" alt="Assistant image"></a>
+                            <span class="demo-version">
+                                <i class="fa-solid fa-laptop"></i>
+                                Demo
+                            </span>
+                            <span class="eyeglasses-img">
+                                <img src="./images/header-images/eyeglasses.png" alt="eyeglasses">
+                            </span>
+                            <span class="language">
+                                <ul class="main-language">
+                                    <li>EN
+                                        <i class="fa-solid fa-caret-down"></i>
+                                        <ul class="inner-language"> 
+                                            <li class="russian-language">RU</li>
+                                            <li class="uzbek-language">UZ</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </span>
+                            <span class="reg-button"><a href="#">Register</a></span>
+                            <button type="button" class="sign-in-btn">Sign in</button>
+                        </div>
                     </div>
-                </header>
+                    <ul class="lower-navigation__items">
+                        <li class="lower-navigation__item">
+                            <a href="#">Lots</a>
+                        </li>
+                        <li class="lower-navigation__item">
+                            <a href="#">Help</a>
+                        </li>
+                        <li class="lower-navigation__item">
+                            <a href="#">Aboute Trade</a>
+                        </li>
+                        <li class="lower-navigation__item">
+                            <a href="#">Preferences</a>
+                        </li>
+                        <li class="lower-navigation__item">
+                            <a href="#">Interactive services</a>
+                        </li>
+                        <li class="lower-navigation__item">
+                            <a href="#">Corporate governance</a>
+                        </li>
+                        <li class="lower-navigation__item">
+                            <a href="#">News</a>
+                        </li>
+                        <li class="lower-navigation__item">
+                            <a href="#">Contacts</a>
+                        </li>
+                        <div class="date">
+                            <p id="currentDateTime"></p>
+                        </div>
+                        <div class="lower-search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+        </div>
             
     <!-- /Header section -->
 
     <!-- Categories section -->
-        
+        <div class="container">
+            <section class="row categories">
+                <div class="col-md-2 mt-3">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">State assets</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image1.png" alt="Image1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Lease of state property</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image2.png" alt="Image2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Xalqchi IPO</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image3.png" alt="Image3">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">"Ugam River" tourist complex</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image4.png" alt="Image4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">The right to conclude an ...</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image5.png" alt="Image5">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Lease of agricultural land</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image6.png" alt="Image6">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Agricultural land lease</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image7.png" alt="Image7">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Realestate</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image8.png" alt="Image8">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Autotransport</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image9.png" alt="Image9">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Land lots</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image10.png" alt="Image10">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">The right to use subsoil plots</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image11.png" alt="Image11">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Outdoor advertising objects</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image12.png" alt="Image12">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Cleaning of riverbeds</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image13.png" alt="Image13">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Lake system</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image14.png" alt="Image14">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Special equipment</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image15.png" alt="Image15">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Customers properties</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image16.png" alt="Image16">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Bankruptcy</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image17.png" alt="Image17">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Territory clearance</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image18.png" alt="Image18">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Property of "O`zpaxtasanoat" JSC</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image19.png" alt="Image19">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Locations for installing radars and cameras</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image20.png" alt="Image20">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Installation of stationary points</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image21.png" alt="Image21">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Aircraft</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image22.png" alt="Image22">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Mobile points of sale</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image23.png" alt="Image23">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Public control facilities</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image24.png" alt="Image24">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Properties of JSC "Ozagrokyomikhoya"</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image25.png" alt="Image25">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">The right to build power plants</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image26.png" alt="Image26">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Microcenters</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image27.png" alt="Image27">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Renting a water basin</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image28.png" alt="Image28">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Greenhouse gases emission</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image29.png" alt="Image29">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Property of "O`zagrosservis" JSC</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image30.png" alt="Image30">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 hide-category d-none">
+                    <div class="category-item p-2">
+                        <div class="category-title d-flex align-items-center">Other properties</div>
+                        <div class="category-img">
+                            <img src="./images/categories-images/category-image31.png" alt="Image31">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 d-flex justify-content-center">
+                    <div class="category-toggle">
+                        <span class="show-more">
+                            Show more
+                            <i class="fa-solid fa-angle-down"></i>
+                        </span>
+                        <span class="show-less d-none">
+                            Show less
+                            <i class="fa-solid fa-angle-up"></i>
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </div>
     <!-- /Categories section -->
 
     <!-- Carousel section -->
@@ -172,7 +434,6 @@
         </div>
     <!-- /Footer section -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="/js/shared.js"></script>
     <script src="/js/main.js"></script>
 </body>
