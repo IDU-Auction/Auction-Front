@@ -1,5 +1,34 @@
 /* Categories styles */
 
+.categories {
+    border-bottom: 1px solid #999;
+}
 
+.category-item {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-item:hover {
+    background-color: #023581;
+    color: #fff;
+    transition: all 0.8s ease 0s;
+}
+
+.category-img img {
+    height: 100%;
+}
+
+.category-toggle {
+    border: 1px solid #999;
+    padding: 7px 14px;
+    border-radius: 30px;
+    transform: translate(0, 50%);
+    background: #fff;
+}
 
 /* /Categories styles */
