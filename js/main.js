@@ -11,3 +11,7 @@ $(document).ready(function () {
         $(".show-more").show();
     });
 });
+
+
+// Carousel script
+
