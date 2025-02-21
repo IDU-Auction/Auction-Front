@@ -140,7 +140,45 @@
     color: #3f3838af;
     font-size: 0.7rem;
 }
-
-
-
 /* /Advertising styles */
+
+/* Land area styles */
+.land {
+    margin-top: 2.5rem;
+}
+
+.upper-land__area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 2.5rem;
+}
+
+.land-title {
+    font-size: 1.25rem;
+    color: #023581;
+    font-weight: bold;
+}
+
+.land-button button{
+    border: none;
+    color: #023581;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 0.875rem;
+}
+
+.land-button:hover {
+    background-color: #999;
+}
+
+.lower-land__area {
+    border-top: 1px solid #999;
+}
+
+.lower-land__area p {
+    margin-top: 3.125rem;
+    text-align: center;
+}
+
+/* /Land area styles */
