@@ -160,16 +160,26 @@
     font-weight: bold;
 }
 
+.land-button button a {
+    color: #023581;
+    text-decoration: none;
+}
+
 .land-button button{
+    padding: 0.25rem;
     border: none;
     color: #023581;
     font-weight: bold;
     background-color: transparent;
     font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    line-height: 1.5rem;
 }
 
-.land-button:hover {
-    background-color: #999;
+.land-button button:hover {
+    background-color: #E3E6EC;
+    border-radius: 5px;
 }
 
 .lower-land__area {
@@ -179,6 +189,10 @@
 .lower-land__area p {
     margin-top: 3.125rem;
     text-align: center;
+    color: #023581;
+    font-size: 1.375rem;
+    line-height: 2.0625rem;
+    font-weight: 400;
 }
 
 /* /Land area styles */
