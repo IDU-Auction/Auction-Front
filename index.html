@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head> 
 <body>
@@ -298,41 +299,35 @@
 
     <!-- Advertising section -->
         <div class="container">
-            <section class="advertising">
-                <div class="left-advertising-banner">
-                    <div class="advertising-banner__image">
-                        <img src="images/advertising-images/reklama-banner1.jpeg" alt="Advertising banner 1">
-                        <div class="carousel">
-                            <i class="fa-solid fa-circle"></i>
-                            <i class="fa-solid fa-circle"></i>
-                            <i class="fa-solid fa-circle"></i>
+        <section class="advertising">
+            <div class="swiper mySwiper left-advertising-banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide advertising-banner__image"><img src="images/advertising-images/reklama-banner1.jpeg" alt="Advertising banner 1"></div>
+                    <div class="swiper-slide advertising-banner__image"><img src="images/advertising-images/reklama-banner2.jpeg" alt="Advertising banner 2"></div>
+                    <div class="swiper-slide advertising-banner__image"><img src="images/advertising-images/reklama-banner3.jpeg" alt="Advertising banner 3"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+    
+            <div class="right-advertising-banner">
+                    <div class="swiper mySwiper upper-advertising-banner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide advertising-banner__image"><img src="images/advertising-images/reklama-banner4.jpeg" alt="Advertising banner 4"></div>
+                            <div class="swiper-slide advertising-banner__image"><img src="images/advertising-images/reklama-banner5.jpeg" alt="Advertising banner 5"></div>
+                            <div class="swiper-slide advertising-banner__image"><img src="images/advertising-images/reklama-banner6.jpeg" alt="Advertising banner 6"></div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                </div>
-
-                <div class="right-advertising-banner">
-                        <div class="upper-advertising-banner">
-                            <div class="advertising-banner__image">
-                                <img src="images/advertising-images/reklama-banner4.jpeg" alt="Advertising banner 4">
-                                <div class="carousel">
-                                    <i class="fa-solid fa-circle"></i>
-                                    <i class="fa-solid fa-circle"></i>
-                                    <i class="fa-solid fa-circle"></i>
-                                </div>
-                            </div>
+                    <div class="swiper mySwiper lower-advertising-banner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide advertising-banner__image"><img src="images/advertising-images/reklama-banner7.jpeg" alt="Advertising banner 7"></div>
+                            <div class="swiper-slide advertising-banner__image"><img src="images/advertising-images/reklama-banner8.jpeg" alt="Advertising banner 8"></div>
+                            <div class="swiper-slide advertising-banner__image"><img src="images/advertising-images/reklama-banner9.jpeg" alt="Advertising banner 9"></div>
                         </div>
-                        <div class="lower-advertising-banner">
-                            <div class="advertising-banner__image">
-                                <img src="images/advertising-images/reklama-banner7.jpeg" alt="Advertising banner 7">
-                                <div class="carousel">
-                                    <i class="fa-solid fa-circle"></i>
-                                    <i class="fa-solid fa-circle"></i>
-                                    <i class="fa-solid fa-circle"></i>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </section>
+                        <div class="swiper-pagination"></div>
+                    </div>
+            </div>
+        </section>
         </div>
     <!-- /Advertising section -->
 
@@ -422,6 +417,8 @@
             </section>
         </div>
     <!-- /Footer section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/shared.js"></script>
     <script src="js/main.js"></script>
