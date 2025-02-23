@@ -196,3 +196,54 @@
 }
 
 /* /Land area styles */
+
+
+/* Help section styles */
+.help {
+    background-image: url(/images/help-image/help-section-background.png);
+    background-repeat: repeat-x;
+    padding: 5rem 0 0.625rem 0;
+    margin-top: 3.125rem;
+}
+
+.help-tips {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.help-tip__text {
+    padding: 0 1.5rem;
+}
+.help-tip__title {
+    font-size: 2.0625rem;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #023581;
+    margin-bottom: 1rem;
+}
+
+.help-tip__description {
+    color: #023581;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.more-btn {
+    background-color: #023581;
+    font-size: 1.25rem;
+    color: #ffffff;
+    padding: 0.5rem 1.5rem;
+    line-height: 2.125rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.more-btn:hover {
+    background-color: #2C5191;
+    color: #ffffff;
+
+}
+/* /Help section styles */
