@@ -207,9 +207,9 @@
 }
 
 .help-tips {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 .help-tip__text {
     padding: 0 1.5rem;
@@ -245,5 +245,23 @@
     background-color: #2C5191;
     color: #ffffff;
 
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #BDBDBD;
+    font-weight: bold;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    color: #023581;
+}
+
+.swiper-pagination-bullet {
+    background-color: #526FA5;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #033581;
 }
 /* /Help section styles */
