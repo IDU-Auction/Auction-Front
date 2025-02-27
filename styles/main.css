@@ -411,3 +411,55 @@
     margin-right: 0.3125rem;
 }
 /* /News section styles */
+
+
+/* Mobile app section styles */
+
+.mobile {
+    margin-top: 4.375rem;
+    padding-top: 1.875rem;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.12);
+    background: #ffffff;
+}
+
+.mobile-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.mobile-app__download h1{
+    font-size: 4.375rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    color: #023581;
+    white-space: nowrap;
+}
+
+.mobile-app__download p {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #2196f3;
+    margin: 0;
+    margin-bottom: 0.625rem;
+}
+
+.app-download__link {
+    display: flex;
+}
+
+.app-download__link a img {
+    width: 200px;
+    height: auto;
+    padding-right: 1rem;
+}
+
+.mobile-app__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #023581;
+    font-weight: 300;
+}
+/* /Mobile app section styles */
