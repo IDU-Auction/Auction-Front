@@ -382,11 +382,21 @@
     flex-wrap: wrap;
     margin-top: 1.25rem;
     margin-left: 1rem;
-    padding-top: 1.25rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.news-text {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.3125rem;
+    color: #023581;
+    margin-right: 1.25rem;
+    padding-bottom: 0.3125rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
 .news-date, .news-view {
+    padding-top: 0.5rem;
     font-size: 1rem;
     color: #023581;
     font-weight: 300;
