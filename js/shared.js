@@ -19,3 +19,22 @@ setInterval(showDateTime, 1000);
 
 // Run showDateTime when the page loads
 window.onload = showDateTime;
+
+
+function updateDateTime() {
+    let now = new Date();
+
+    // Format date as dd.mm.yyyy in Tashkent time
+    let optionsDate = { timeZone: "Asia/Tashkent", day: "2-digit", month: "2-digit", year: "numeric" };
+    let formattedDate = new Intl.DateTimeFormat("en-GB", optionsDate).format(now);
+    document.getElementById("date").textContent = formattedDate.replace(/\//g, "."); // Convert format to dd.mm.yyyy
+
+    // Format time as HH:MM:SS in Tashkent time
+    let optionsTime = { timeZone: "Asia/Tashkent", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false };
+    let formattedTime = new Intl.DateTimeFormat("en-GB", optionsTime).format(now);
+    document.getElementById("time").textContent = formattedTime;
+}
+
+// Update date and time every second
+setInterval(updateDateTime, 1000);
+updateDateTime(); // Initial call to avoid delay

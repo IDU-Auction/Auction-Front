@@ -1,0 +1,30 @@
+/* Header Section */
+
+.navigation-items-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3.125rem;
+    padding-right: 6.25rem;
+}
+
+.left-nav__items {
+    display: flex;
+    align-items: center;
+}
+
+.date-time {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+
+.date-time li {
+    font-size: 1rem;
+    margin-right: 0.875rem;
+    line-height: 2.125rem;
+    color: #023581;
+    font-weight: 300;
+}
+/* /Header Section */
