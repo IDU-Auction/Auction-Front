@@ -101,11 +101,13 @@
 
 .registration-form__item {
     display: flex;
-    
+    flex-direction: column;
+    margin-bottom: 1.5rem;
 }
 
 .reg-input {
     display: flex;
+    align-items: center;
     width: 100%;
     border: 1px solid #ccc;
     padding: 0 0.75rem;
@@ -120,7 +122,7 @@
 
 .reg-input:focus-within {
     border: 1px solid #1976D2;
-    transition: border-color 0.36scubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 0.36s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .reg-icon {
@@ -130,13 +132,9 @@
     padding: 5px;
 }
 
-.reg-icon i, span {
-    background-color: #FFF;
-}
-
 .reg-icon i {
     padding-right: 0.5rem;
-    color: #757575
+    color: #757575;
 }
 
 .reg-input input {
@@ -145,7 +143,96 @@
     outline: none;
     line-height: 1.875rem;
     font-size: 1rem;
-    
+    background: none;
+}
+
+.reg-input input::placeholder {
+    color: #757575;
+    transition: font-size 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+.reg-input:focus-within input::placeholder {
+    font-size: 12px;
+    transform: translateY(-10px);
+    opacity: 0.7;
+}
+
+/* Password Toggle Button */
+.toggle-password {
+    cursor: pointer;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+/* Strength Meter */
+#strengthMeter {
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+#strengthBar {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+}
+
+.very-weak { background: red; }
+.weak { background: orange; }
+.medium { background: yellow; }
+.strong { background: green; }
+
+/* Strength Message */
+#strengthMessage {
+    font-weight: 300;
+    margin-top: 0.3125rem;
+    text-align: left;
+}
+
+/* Password Match Message */
+#passwordMatchMessage {
+    font-weight: 300;
+    margin-top: 0.3125rem;
+    text-align: left;
+}
+
+#phoneError {
+    color: red;
+    font-size: 0.875rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.confirmation-btn {
+    margin: 30px 20% 0 20%;
+    height: 46px;
+    display: flex;
+}
+
+.confirmation-btn button {
+    background-color: #023581;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 2.25rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.25rem;
+    width: 100%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+    transition: all 0.5s ease-in-out;
+}
+
+.confirmation-btn button:hover {
+    background-color: #fff;
+    border: 1px solid #023581;
+    color: #023581;
 }
 
 /* /Registration section */

@@ -84,9 +84,33 @@
                                             <i class="fa-solid fa-phone"></i>
                                             <span>+998</span>
                                         </div>
-                                        <input type="tel" name="phone" id="phone" required>
+                                        <input type="tel" name="phone" id="phone" maxlength="12" required>
                                     </div>
                                 </div>
+                                <p id="phoneError"></p>
+                                <div class="registration-form__item">
+                                    <div class="reg-input">
+                                        <div class="reg-icon">
+                                            <i class="fa-solid fa-lock"></i>
+                                        </div>
+                                        <input type="password" name="password1" id="password1" placeholder="Password" required>
+                                        <span class="toggle-password"><i class="fa-solid fa-eye"></i></span>
+                                    </div>
+                                </div>
+                                <div id="strengthMeter">
+                                    <div id="strengthBar"></div>
+                                </div>
+                                <p id="strengthMessage"></p>
+                                <div class="registration-form__item">
+                                    <div class="reg-input">
+                                        <div class="reg-icon">
+                                            <i class="fa-solid fa-lock"></i>
+                                        </div>
+                                        <input type="password" name="password2" id="password2" placeholder="Enter your password again" required>
+                                        <span class="toggle-password"><i class="fa-solid fa-eye"></i></span>
+                                    </div>
+                                </div>
+                                <p id="passwordMatchMessage"></p>
                             </div>
                         </div>
                      </form> 
@@ -142,7 +166,7 @@
     <!-- /Footer section -->
 
 
-
-    <script src="js/shared.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/registration.js"></script>
 </body>
 </html>
