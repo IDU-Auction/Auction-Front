@@ -51,7 +51,7 @@ body {
     width: 285px;
 }
 
-form {
+.search-bar form {
     display: flex;
     width: 100%;
     margin: 0;
@@ -150,6 +150,7 @@ form {
     border: 1px solid #023581;
     border-radius: 0.25rem;
     cursor: pointer;
+    font-size: 1rem;
 
 
 }
