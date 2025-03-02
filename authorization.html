@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="styles/shared.css">
     <link rel="stylesheet" href="styles/registration.css">
+    <link rel="stylesheet" href="styles/authorization.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -63,64 +64,52 @@
         </header>
     <!-- /Header section -->
     
-    <!-- Registration section -->
-        <section>
-            <div class="container">
-                <div class="registration">
-                    <div class="registration-header">
-                        <a href="authorization.html"><i class="fa-solid fa-arrow-left-long"></i></a>
-                        Sign Up
-                    </div>
-                    <form action="#" method="POST">
-                        <div class="registration-form">
-                            <div class="reg-sub-form">
-                                <div class="registration-method">
-                                    <div class="using-phone">Phone</div>
-                                    <div class="using-email">E-mail</div>
+    <!-- Authorization section -->
+        <div class="container">
+            <section class="authorization">
+                <div class="authorization-title">
+                    Sign in as participant/customer
+                </div>
+                <form action="#" method="post">
+                    <div class="authorization-box">
+                        <div class="authorization-method">
+                            <p class="active">Phone</p>
+                            <p>E-mail</p>
+                            <p>One ID</p>
+                            <p>QR Code</p>
+                        </div>
+                        <div class="authorization__item">
+                            <div class="authorization-input">
+                                <div class="authorization-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>+998</span>
                                 </div>
-                                <div class="registration-form__item">
-                                    <div class="reg-input">
-                                        <div class="reg-icon">
-                                            <i class="fa-solid fa-phone"></i>
-                                            <span>+998</span>
-                                        </div>
-                                        <input type="tel" name="phone" id="phone" maxlength="12" required>
-                                    </div>
-                                </div>
-                                <p id="phoneError"></p>
-                                <div class="registration-form__item">
-                                    <div class="reg-input">
-                                        <div class="reg-icon">
-                                            <i class="fa-solid fa-lock"></i>
-                                        </div>
-                                        <input type="password" name="password1" id="password1" placeholder="Password" required>
-                                        <span class="toggle-password"><i class="fa-solid fa-eye"></i></span>
-                                    </div>
-                                </div>
-                                <div id="strengthMeter">
-                                    <div id="strengthBar"></div>
-                                </div>
-                                <p id="strengthMessage"></p>
-                                <div class="registration-form__item">
-                                    <div class="reg-input">
-                                        <div class="reg-icon">
-                                            <i class="fa-solid fa-lock"></i>
-                                        </div>
-                                        <input type="password" name="password2" id="password2" placeholder="Enter your password again" required>
-                                        <span class="toggle-password"><i class="fa-solid fa-eye"></i></span>
-                                    </div>
-                                </div>
-                                <p id="passwordMatchMessage"></p>
+                                <input type="tel" name="phone" id="phone" maxlength="12" required>
                             </div>
                         </div>
-                     </form> 
-                     <div class="confirmation-btn">
-                        <button type="submit">Confirm</button>
-                     </div>
-                </div> 
-            </div>      
-        </section>
-    <!-- /Registration section -->
+                        <div class="authorization__item">
+                            <div class="authorization-input">
+                                <div class="authorization-icon">
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                                <input type="password" name="password" id="password" placeholder="Password" required>
+                                <span class="toggle-password"><i class="fa-solid fa-eye"></i></span>
+                            </div>
+                        </div>
+                        <div class="authorization-button">
+                            <button type="submit">Enter</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="new-user__text">
+                    <span>Are you a new user?</span>
+                </div>
+                <div class="registration-button">
+                    <button type="button" onclick="location.href='registration.html'">Registration</button>
+                </div>
+            </section>
+        </div>
+    <!-- Authorization section -->
 
     <!-- Footer section -->
         <div class="container">

@@ -1,4 +1,7 @@
 /* Header Section */
+body {
+    background-color: #fff;
+}
 
 .navigation-items-wrapper {
     display: flex;
@@ -55,8 +58,9 @@
     align-items: center;
 }
 
-.registration-header i {
+.registration-header a {
     font-size: 1.875rem;
+    color: #023581;
 }
 
 .registration-form {
@@ -226,7 +230,7 @@
     border-radius: 0.25rem;
     width: 100%;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out ;
 }
 
 .confirmation-btn button:hover {
