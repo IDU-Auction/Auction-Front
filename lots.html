@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>E-Auction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/lots.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <!-- Header section -->
+            <header class="header">
+                <nav class="navigation-items">
+                    <div class="container">
+                        <div class="upper-navigation__items">
+                            <div class="upper-left-navigation-items">
+                                 <div class="main-logo">
+                                     <a href="index.html">
+                                         <img src="./images/header-images/main-logo.png" alt="Main Logo">
+                                     </a>
+                                 </div>
+                                 <div class="search-bar">
+                                     <form action="#" method="GET">
+                                         <input type="text" name="search" class="search-input" id="search" placeholder="Lot number or property name">
+                                         <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                                     </form>
+                                 </div>
+                             </div>
+                             <div class="upper-right-navigation-items">
+                                 <a href="index.html"><img src="./images/header-images/ipo.png" alt="IPO Partner image"></a>
+                                 <a href="index.html"><img src="./images/header-images/e-auction-shop.png" alt="E-Auction-Shop image"></a>
+                                 <a href="index.html"><img src="./images/header-images/assistant.png" alt="Assistant image"></a>
+                                 <span class="demo-version">
+                                     <i class="fa-solid fa-laptop"></i>
+                                     Demo
+                                 </span>
+                                 <span class="eyeglasses-img">
+                                     <img src="images/header-images/eyeglass.svg" alt="eyeglasses">
+                                 </span>
+                                 <div class="dropdown">
+                                    <button class="dropbtn">
+                                        <img src="images/header-images/en.png" alt="English">
+                                        EN
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                    <a href="#">
+                                        <img src="images/header-images/uz.png" alt="Uzbek">
+                                        Uzbek
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/header-images/ru.png" alt="Russian">
+                                        Russian
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/header-images/en.png" alt="English">
+                                        English
+                                    </a>
+                                    </div>
+                                </div>
+                                 <span class="reg-button"><a href="registration.html">Register</a></span>
+                                 <a href="authorization.html"><button type="button" class="sign-in-btn">Sign in</button></a>
+                             </div>
+                         </div>
+                    </div>
+                </nav>
+                <nav class="navigation-items">
+                    <div class="container">
+                        <ul class="lower-navigation__items">
+                            <li class="lower-navigation__item">
+                                <a href="#">Lots</a>
+                            </li>
+                            <li class="lower-navigation__item">
+                                <a href="#">Help</a>
+                            </li>
+                            <li class="lower-navigation__item">
+                                <a href="#">Aboute Trade</a>
+                            </li>
+                            <li class="lower-navigation__item">
+                                <a href="#">Preferences</a>
+                            </li>
+                            <li class="lower-navigation__item">
+                                <a href="#">Interactive services</a>
+                            </li>
+                            <li class="lower-navigation__item">
+                                <a href="#">Corporate governance</a>
+                            </li>
+                            <li class="lower-navigation__item">
+                                <a href="#">News</a>
+                            </li>
+                            <li class="lower-navigation__item">
+                                <a href="#">Contacts</a>
+                            </li>
+                            <div class="date">
+                                <p id="currentDateTime"></p>
+                            </div>
+                            <div class="lower-search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+    <!-- /Header section -->
+
+    <!-- Lots section -->
+    <section class="main-lots">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="lots.html" class="active">Lots</a>
+            </div>
+            <div class="lots">
+                <div class="left-lots-sidebar">
+                    <div class="lots-list">
+                        <ul class="lots-list__items">
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/all-group.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">ALL</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image1.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">State assets</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image2.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Lease of state property</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image3.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Xalqchil IPO</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image4.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">"Ugam River" tourist complex</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image5.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">The right to conclude an agreement on contributing a share to participate 
+                                        in the construction of a residential building 
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image6.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Lease of agricultural land</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image7.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Agricultural land lease</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image8.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Realestate</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image9.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Autotransport</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image10.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Land lots</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image11.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">The right to use subsoil plots</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image12.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Outdoor advertising objects</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image13.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Cleaning of riverbeds</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image14.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Lake system</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image15.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Special equipment</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image16.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Customers properties</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image17.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Bankruptcy</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image18.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Territory clearance</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image19.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Property of "Uzpaxtasanoat" JSC</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image20.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Locations for installing radars and cameras</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image21.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Installation of stationary points</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image22.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Aircraft</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image23.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Mobile points of sale</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image24.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Public control facilities</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image25.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Properties of JSC "Ozagrokyomikhoya"</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image26.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">The right to build power plants</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image27.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Microcenters</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image28.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Renting a water basin</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image29.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Greenhous gases emission</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image30.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Property of "O'zagrosservis" JSC</a>
+                                </div>
+                            </li>
+                            <li class="lots-list__item">
+                                <div class="lots-list__item-image">
+                                    <img src="images/categories-images/category-image31.png" alt="lot-image">
+                                </div>
+                                <div class="lots-list__item-title">
+                                    <a href="#">Other properties</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lots-content"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /Lots section -->
+
+    <!-- Footer section -->
+        <!-- <div class="container">
+            <section class="footer">
+                <div class="main-footer-info">
+                    <div class="left-footer-details">
+                        <p>© Copyright 2017-2025. JSC "Organizing electronic online <br>
+                            auctions". All rights reserved
+                        </p>
+                        <div class="social-media">
+                            <a href="#" class="social-media-image">
+                                <img src="./images/social-media-images/telegram.png" alt="telegram icon">
+                            </a>
+                            <a href="#" class="social-media-image">
+                                <img src="./images/social-media-images/facebook.png" alt="facebook icon">
+                            </a>
+                            <a href="#" class="social-media-image">
+                                <img src="./images/social-media-images/instagram.png" alt="instagram icon">
+                            </a>
+                            <a href="#" class="social-media-image">
+                                <img src="./images/social-media-images/twitter.png" alt="twitter icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right-footer-details">
+                        <div class="phone">
+                            <div class="phone-number">+998 71 202-21-11</div>
+                             <div class="phone-icon1">
+                                <div class="phone-icon2">
+                                    <div class="phone-icon3">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="extra-footer-info">Veb-saytdagi axborot materiallaridan boshqa shaxslar foydalanganda jamiyatning korporativ 
+                    veb-saytiga majburiy havolalar korsatilishi kerak
+                </p>
+            </section>
+        </div> -->
+    <!-- /Footer section -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/shared.js"></script>
+    <script src="js/lots.js"></script>
+</body>
+</html>
