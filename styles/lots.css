@@ -76,9 +76,8 @@
     line-height: 1.1875rem;
 }
 
-
-
 .lots-content {
     width: 75%;
     height: auto;
+    display: flex;
 }
