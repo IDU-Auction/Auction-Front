@@ -26,12 +26,14 @@
 .lots {
     margin-top: 1rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
 }
 
 .left-lots-sidebar {
     width: 25%;
     height: auto;
+    box-sizing: border-box;
 }
 
 .lots-list {
@@ -79,5 +81,150 @@
 .lots-content {
     width: 75%;
     height: auto;
+    padding: 1.25rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-left: 1rem;
+}
+
+.lot {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 2rem;
+    border: 1px solid #C0C0C0;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease-in;
+}
+
+.lot:hover {
+    background-color: #FFFAEE;
+    border-color: #E9AC1C;
+}
+
+.main-lot__items {
     display: flex;
+}
+
+.lot-image {
+    width: 25%;
+    height: auto;
+}
+
+.lot-image img {
+    width: 100%;
+    height: auto;
+}
+
+.lot-info {
+    margin-left: 1.25rem;
+    width: 75%;
+
+}
+
+.lot-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lot-statistics {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #757575;
+    padding-top: 0.25rem;
+}
+
+.lot-statistics > i:nth-child(n+2){
+    margin-left: 1rem;
+}
+
+.lot-number {
+    background-color: #F9B54C;
+    -webkit-border-radius: 0 3px 0 5px;
+    border-radius: 0 3px 0 5px;
+    padding: 2.5px 10px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.lot-value {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: #023581;
+    margin-top: 0;
+    margin-bottom: 0.325rem;
+    padding-right: 0.625rem;
+
+}
+
+.lot-title {
+    padding-bottom: 0.1875rem;
+    margin-top: 0.625rem;
+}
+
+.lot-title span {
+    border-bottom: 1.5px solid #023581;
+    padding-bottom: 0px;
+}
+
+.lot-aspect {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+}
+
+.lot-aspect__detail {
+    padding-right: 0.25rem;
+    
+}
+
+.lot-text {
+    margin: 0;
+    padding: 0;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.3125rem;
+    color: #303031;
+}
+
+.extra-lot__aspect {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.lot-address {
+    padding-left: 1rem;
+}
+
+.lot-address .lot-value {
+    line-height: normal;
+    font-weight: 400;
+}
+
+.lot-buttons {
+    padding-right: 1rem;
+}
+
+.lot-buttons a{
+    text-decoration: none;
+}
+
+.lot-btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #033581;
+    color: #fff;
+    line-height: 1.5rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    border-radius: 3px;
+    padding: 0.25rem 1.25rem;
+}
+
+.apply-btn {
+    background-color:  #4CAF4F;
 }
