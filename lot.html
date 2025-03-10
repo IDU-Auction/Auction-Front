@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>E-Auction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/lot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <!-- Header section -->
+        <header class="header">
+                <nav class="navigation-items">
+                    <div class="container">
+                        <div class="upper-navigation__items">
+                            <div class="upper-left-navigation-items">
+                                 <div class="main-logo">
+                                     <a href="index.html">
+                                         <img src="./images/header-images/main-logo.png" alt="Main Logo">
+                                     </a>
+                                 </div>
+                                 <div class="search-bar">
+                                     <form action="#" method="GET">
+                                         <input type="text" name="search" class="search-input" id="search" placeholder="Lot number or property name">
+                                         <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                                     </form>
+                                 </div>
+                             </div>
+                             <div class="upper-right-navigation-items">
+                                 <a href="index.html"><img src="./images/header-images/ipo.png" alt="IPO Partner image"></a>
+                                 <a href="index.html"><img src="./images/header-images/e-auction-shop.png" alt="E-Auction-Shop image"></a>
+                                 <a href="index.html"><img src="./images/header-images/assistant.png" alt="Assistant image"></a>
+                                 <span class="demo-version">
+                                     <i class="fa-solid fa-laptop"></i>
+                                     Demo
+                                 </span>
+                                 <span class="eyeglasses-img">
+                                     <img src="images/header-images/eyeglass.svg" alt="eyeglasses">
+                                 </span>
+                                 <div class="dropdown">
+                                    <button class="dropbtn">
+                                        <img src="images/header-images/en.png" alt="English">
+                                        EN
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                    <a href="#">
+                                        <img src="images/header-images/uz.png" alt="Uzbek">
+                                        Uzbek
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/header-images/ru.png" alt="Russian">
+                                        Russian
+                                    </a>
+                                    <a href="#">
+                                        <img src="images/header-images/en.png" alt="English">
+                                        English
+                                    </a>
+                                    </div>
+                                </div>
+                                 <span class="reg-button"><a href="registration.html">Register</a></span>
+                                 <a href="authorization.html"><button type="button" class="sign-in-btn">Sign in</button></a>
+                             </div>
+                         </div>
+                    </div>
+                </nav>
+                <nav class="navigation-items">
+                    <div class="container">
+                        <ul class="lower-navigation__items">
+                            <li class="lower-navigation__item">
+                                <a href="lots.html">Lots</a>
+                            </li>
+                            <li class="lower-navigation__item">
+                                <a href="#">Help</a>
+                            </li>
+                            <li class="lower-navigation__item">
+                                <a href="#">Aboute Trade</a>
+                            </li>
+                            <li class="lower-navigation__item">
+                                <a href="#">Preferences</a>
+                            </li>
+                            <li class="lower-navigation__item">
+                                <a href="#">Interactive services</a>
+                            </li>
+                            <li class="lower-navigation__item">
+                                <a href="#">Corporate governance</a>
+                            </li>
+                            <li class="lower-navigation__item">
+                                <a href="#">News</a>
+                            </li>
+                            <li class="lower-navigation__item">
+                                <a href="#">Contacts</a>
+                            </li>
+                            <div class="date">
+                                <p id="currentDateTime"></p>
+                            </div>
+                            <div class="lower-search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+        </header>
+    <!-- /Header section -->
+
+    <!-- Lot section -->
+        <section class="lot">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="lots.html">Lots</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="lot.html" class="active">Lot ID</a>
+                </div>
+                <div class="lot-detail">
+                    <div class="lot-card__image">
+                        <div class="lot-image">
+                            <img src="images/lot-detail-images/villa1.jpg" alt="Villa">
+                        </div>
+                    </div>
+                    <div class="lot-card__details">
+                        <div class="lot-id">
+                            <span class="lot-card-number-title">Lot #</span>
+                            <span class="lot-card-number">13582909</span>
+                        </div>
+                        <div class="lot-title">
+                            Modern Luxury Villa with Open Living Space and Nature Views
+                        </div>
+                        <div class="lot-card-attributes">
+                            <div class="d-flex">
+                                <div class="lot-card__info">
+                                    <div class="lot-card-attribute__title">
+                                        <img src="images/lot-detail-images/application_date_icon.png" alt="Application_daeadline">
+                                        <span>Application Deadline</span>
+                                    </div>
+                                    <div class="lot-card-attribute__value">23.05.2025 09:00</div>
+                                </div>
+                                <div class="lot-card__info">
+                                    <div class="lot-card-attribute__title">
+                                        <img src="images/lot-detail-images/end_auction_date.png" alt="end auctions">
+                                        <span>Auction time</span>
+                                    </div>
+                                    <div class="lot-card-attribute__value">23.05.2025 09:00</div>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="lot-card__info">
+                                    <div class="lot-card-attribute__title">
+                                        <img src="images/lot-detail-images/baholangan_narx_icon.png" alt="actual price">
+                                        <span>Starting Price</span>
+                                    </div>
+                                    <div class="lot-card-attribute__value">38 910 000 000.00 UZS</div>
+                                </div>
+                                <div class="lot-card__info">
+                                    <div class="lot-card-attribute__title">
+                                        <img src="images/lot-detail-images/zakalad_icon.png" alt="deposite">
+                                        <span>Deposite amount (10%)</span>
+                                    </div>
+                                    <div class="lot-card-attribute__value">3 891 000 000.00 UZS</div>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="lot-card__info">
+                                    <div class="lot-card-attribute__title">
+                                        <img src="images/lot-detail-images/type_auction.png" alt="actual price">
+                                        <span>Bidding method</span>
+                                    </div>
+                                    <div class="lot-card-attribute__value">Auction</div>
+                                </div>
+                                <div class="lot-card__info">
+                                    <div class="lot-card-attribute__title">
+                                        <img src="images/lot-detail-images/sort_auction_icon.png" alt="deposite">
+                                        <span>Bidding method</span>
+                                    </div>
+                                    <div class="lot-card-attribute__value">On increasing</div>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="lot-card__info">
+                                    <div class="lot-card-attribute__title">
+                                        <i class="fa-solid fa-list-ul"></i>
+                                        <span>First step (5%)</span>
+                                    </div>
+                                    <div class="lot-card-attribute__value">3 891 000 000.00 UZS</div>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div>
+                                    <div class="lot-card-attribute__title">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span>Address</span>
+                                    </div>
+                                    <div class="lot-card-attribute__value">47 Mash'al Street, Mirzo Ulugbek District, Tashkent, Uzbekistan</div>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div>
+                                    <div class="lot-card-attribute__title">
+                                        <i class="fa-solid fa-exclamation"></i>
+                                        <span>Lot status</span>
+                                    </div>
+                                    <div class="lot-card-attribute__value" style="color: #388e3c;">Acceptance of electronic applications for participation</div>
+                                </div>
+                            </div>
+                            <div class="lot-card-statistics">
+                                <ul class="lot-statistics-icons">
+                                    <li class="lot-icon">
+                                        <i class="fa-regular fa-user"></i>
+                                        <span>10</span>
+                                    </li>
+                                    <li class="lot-icon">
+                                        <i class="fa-regular fa-eye"></i>
+                                        <span>340</span>
+                                    </li>
+                                    <li class="lot-icon">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span>275</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-lot__detail">
+
+                </div>
+            </div>
+        </section>
+    <!-- /Lot section -->
+
+    <!-- Footer section -->
+        <div class="container">
+            <section class="footer">
+                <div class="main-footer-info">
+                    <div class="left-footer-details">
+                        <p>© Copyright 2017-2025. JSC "Organizing electronic online <br>
+                            auctions". All rights reserved
+                        </p>
+                        <div class="social-media">
+                            <a href="#" class="social-media-image">
+                                <img src="./images/social-media-images/telegram.png" alt="telegram icon">
+                            </a>
+                            <a href="#" class="social-media-image">
+                                <img src="./images/social-media-images/facebook.png" alt="facebook icon">
+                            </a>
+                            <a href="#" class="social-media-image">
+                                <img src="./images/social-media-images/instagram.png" alt="instagram icon">
+                            </a>
+                            <a href="#" class="social-media-image">
+                                <img src="./images/social-media-images/twitter.png" alt="twitter icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right-footer-details">
+                        <div class="phone">
+                            <div class="phone-number">+998 71 202-21-11</div>
+                             <div class="phone-icon1">
+                                <div class="phone-icon2">
+                                    <div class="phone-icon3">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="extra-footer-info">Veb-saytdagi axborot materiallaridan boshqa shaxslar foydalanganda jamiyatning korporativ 
+                    veb-saytiga majburiy havolalar korsatilishi kerak
+                </p>
+            </section>
+        </div>
+    <!-- /Footer section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/shared.js"></script>
+</body>
+</html>
