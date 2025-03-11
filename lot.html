@@ -117,7 +117,8 @@
                     <a href="lot.html" class="active">Lot ID</a>
                 </div>
                 <div class="lot-detail">
-                    <div class="lot-card__image">
+                    <div class="main-lot-details">
+                        <div class="lot-card__image">
                         <div class="lot-image">
                             <img src="images/lot-detail-images/villa1.jpg" alt="Villa">
                         </div>
@@ -176,7 +177,12 @@
                                         <img src="images/lot-detail-images/sort_auction_icon.png" alt="deposite">
                                         <span>Bidding method</span>
                                     </div>
-                                    <div class="lot-card-attribute__value">On increasing</div>
+                                    <div class="lot-card-attribute__value">
+                                       <div class="animation-up">
+                                        <i class="fa-solid fa-angle-up"></i>
+                                       </div>
+                                        On increasing
+                                    </div>
                                 </div>
                             </div>
                             <div class="d-flex">
@@ -224,9 +230,52 @@
                             </div>
                         </div>
                     </div>
+                    </div>
+                    <div class="lot-important__info">
+                        <div class="reminder reminder-animation">
+                            <span class="red-text">Reminder:</span><br>
+                            According to the resolution of the president of the Republic of Uzbekistan PQ-162 of 19.04.2024, in the process of electronic online auction trading held on this lot, participants are required to have a current (12.5) percentage deposit <span class="red-text">amount in their personal account</span> with respect to the price offer <span class="red-text">from the third step</span>. In this case, these funds are taken into account as deposit.
+                        </div>
+                        <div class="important-information">
+                            <span style="font-weight: bold;">Important information:</span><br>
+                                O‘zbekiston Respublikasi Prezidentining 06.09.2024-yildagi PF-135-son Farmoniga asosan qishloq xoʻjaligiga moʻljallanmagan yer uchastkalarini mulk huquqi yoki ijara huquqi asosida, qishloq xoʻjaligiga moʻljallangan yer uchastkalarini ijara huquqi asosida sotib olish qiymatini quyidagi shartlarda har oyda teng ulushlarda, qoldiq summaga Markaziy bankning asosiy stavkasida foiz hisoblagan holda boʻlib-boʻlib toʻlashga beriladi: <br>
+                                - Toshkent shahri, Nukus shahri va viloyat markazlarida – 3 yil davomida kamida 35 foiz miqdorida dastlabgi toʻlovni oʻn besh ish kunida amalga oshirish sharti bilan; <br>
+                                - boshqa aholi punktlarida – 5 yil davomida 15 foiz miqdorida dastlabki toʻlovni oʻn besh ish kunida amalga oshirish sharti bilan;
+                                - 4- va 5-toifalardagi tumanlarda esa 10 yil davomida kamida 15 foiz miqdorida dastlabki toʻlovni oʻn besh ish kunida amalga oshirish sharti bilan; <br>
+                                - barcha turdagi yer uchastkalarining qiymati oʻn besh ish kunida toʻliq toʻlangan taqdirda, jami summaga nisbatan 20 foiz chegirma berilishi, bunda boshlangʻich narxi 50 foizdan ortiqqa pasaytirilgan holda realizatsiya qilingan yer uchastkalari mustasno.
+                    </div>
+                    </div>
+                    <div class="lot-faqs">
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-button">Lot information <i class="fas fa-chevron-down"></i></button>
+                                <div class="accordion-content">
+                                    <p>Details about the lot...</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button">Property information <i class="fas fa-chevron-down"></i></button>
+                                <div class="accordion-content">
+                                    <p>Details about the property...</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button">Customer information <i class="fas fa-chevron-down"></i></button>
+                                <div class="accordion-content">
+                                    <p>Details about the customer...</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-button">Lot documents <i class="fas fa-chevron-down"></i></button>
+                                <div class="accordion-content">
+                                    <p>Documents related to the lot...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="extra-lot__detail">
-
+                    
                 </div>
             </div>
         </section>
@@ -278,5 +327,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/shared.js"></script>
+    <script src="js/lot.js"></script>
 </body>
 </html>
