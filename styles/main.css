@@ -8,7 +8,7 @@
 
 .category-item {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-size: 1rem;
     max-width: 170px;
@@ -200,7 +200,7 @@
 
 /* Help section styles */
 .help {
-    background-image: url(/images/help-image/help-section-background.png);
+    background-image: url(../images/help-image/help-section-background.png);
     background-repeat: repeat-x;
     padding: 5rem 0 0.625rem 0;
     margin-top: 3.125rem;
@@ -516,3 +516,34 @@
     transform: scale(1.2);
 }
 /* /Payment section styles */
+
+
+@media only screen and (max-width: 1200px) {
+    .category-item {
+        min-width: 20%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .category-item {
+        min-width: 29%;
+    }
+    .advertising {
+        flex-direction: column;
+    }
+    .left-advertising-banner {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .right-advertising-banner {
+        width: 100%;
+        margin-left: 0;
+    }
+    .statistics-number {
+        font-size: 1.375rem;
+        line-height: 1.375rem;
+    }
+    .responsive-hidden-news__item {
+        display: none;
+    }
+}

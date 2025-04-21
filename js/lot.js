@@ -40,5 +40,5 @@ function startCountdown(endDate) {
     setInterval(updateCountdown, 1000);
 }
 
-const deadline = new Date("March 20, 2025 23:59:59").getTime();
+const deadline = new Date("March 23, 2025 23:59:59").getTime();
 startCountdown(deadline);
