@@ -279,6 +279,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .statistic-card {
@@ -289,6 +290,7 @@
     padding: 10px 30px 15px 30px;
     background: #ffffff;
     margin-right: 1.5rem;
+    box-sizing: border-box;
 }
 
 .statistics-title {
@@ -526,7 +528,7 @@
 
 @media only screen and (max-width: 1024px) {
     .category-item {
-        min-width: 29%;
+        min-width: 25%;
     }
     .advertising {
         flex-direction: column;
@@ -545,5 +547,42 @@
     }
     .responsive-hidden-news__item {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .help-tips {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+    .help-tip__text {
+        text-align: center;
+        font-size: 0.875rem;
+    }
+    .more-btn{
+        margin-top: 0.875rem;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+    .mobile-details {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile-app__image img {
+        width: 40%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .category-item {
+        min-width: 40%;
+    }
+    .help-tip__text .help-tip__title, .help-tip__description {
+        font-size: 0.875rem;
     }
 }
