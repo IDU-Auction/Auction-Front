@@ -567,6 +567,13 @@
     .swiper-pagination {
         display: none;
     }
+    .statistics-items{
+        flex-direction: column;
+    }
+    .statistic-card {
+        margin:0.5rem 0;
+        width: 70%;
+    }
     .mobile-details {
         flex-direction: column;
         align-items: center;
@@ -584,5 +591,11 @@
     }
     .help-tip__text .help-tip__title, .help-tip__description {
         font-size: 0.875rem;
+    }
+    .news-items {
+        display: block;
+    }
+    .payment-type {
+        margin-right: 0.6rem;
     }
 }

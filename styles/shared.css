@@ -506,4 +506,10 @@ body {
     .full-search-bar{
         width: 60%;
     }
+    .hide-word {
+        display: none;
+    }
+    .search-button i {
+        margin-right: 0;
+    }
 }
