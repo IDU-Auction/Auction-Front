@@ -13,96 +13,115 @@
 <body>
     <!-- Header section -->
         <header class="header">
-                <nav class="navigation-items">
-                    <div class="container">
-                        <div class="upper-navigation__items">
-                            <div class="upper-left-navigation-items">
-                                 <div class="main-logo">
-                                     <a href="index.html">
-                                         <img src="./images/header-images/main-logo.png" alt="Main Logo">
-                                     </a>
-                                 </div>
-                                 <div class="search-bar">
-                                     <form action="#" method="GET">
-                                         <input type="text" name="search" class="search-input" id="search" placeholder="Lot number or property name">
-                                         <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
-                                     </form>
-                                 </div>
-                             </div>
-                             <div class="upper-right-navigation-items">
-                                 <a href="index.html"><img src="./images/header-images/ipo.png" alt="IPO Partner image"></a>
-                                 <a href="index.html"><img src="./images/header-images/e-auction-shop.png" alt="E-Auction-Shop image"></a>
-                                 <a href="index.html"><img src="./images/header-images/assistant.png" alt="Assistant image"></a>
-                                 <span class="demo-version">
-                                     <i class="fa-solid fa-laptop"></i>
-                                     Demo
-                                 </span>
-                                 <span class="eyeglasses-img">
-                                     <img src="images/header-images/eyeglass.svg" alt="eyeglasses">
-                                 </span>
-                                 <div class="dropdown">
-                                    <button class="dropbtn">
-                                        <img src="images/header-images/en.png" alt="English">
-                                        EN
-                                        <i class="fa-solid fa-caret-down"></i>
+        <nav class="navigation-items">
+            <div class="container">
+                <div class="upper-navigation__items">
+                    <div class="upper-left-navigation-items">
+                            <div class="main-logo">
+                                <a href="index.html">
+                                    <img src="./images/header-images/main-logo.png" alt="Main Logo">
+                                </a>
+                            </div>
+                            <div class="main-logo-mini">
+                                <a href="index.html">
+                                    <img src="./images/header-images/main-logo-mini.png" alt="Main Logo">
+                                </a>
+                            </div>
+                            <div class="search-bar">
+                                <form action="#" method="GET">
+                                    <input type="text" name="search" class="search-input" id="search" placeholder="Lot number or property name">
+                                    <button type="submit" class="search-button">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        Search
                                     </button>
-                                    <div class="dropdown-content">
-                                    <a href="#">
-                                        <img src="images/header-images/uz.png" alt="Uzbek">
-                                        Uzbek
-                                    </a>
-                                    <a href="#">
-                                        <img src="images/header-images/ru.png" alt="Russian">
-                                        Russian
-                                    </a>
-                                    <a href="#">
-                                        <img src="images/header-images/en.png" alt="English">
-                                        English
-                                    </a>
-                                    </div>
-                                </div>
-                                 <span class="reg-button"><a href="registration.html">Register</a></span>
-                                 <a href="authorization.html"><button type="button" class="sign-in-btn">Sign in</button></a>
-                             </div>
-                         </div>
-                    </div>
-                </nav>
-                <nav class="navigation-items">
-                    <div class="container">
-                        <ul class="lower-navigation__items">
-                            <li class="lower-navigation__item">
-                                <a href="lots.html">Lots</a>
-                            </li>
-                            <li class="lower-navigation__item">
-                                <a href="#">Help</a>
-                            </li>
-                            <li class="lower-navigation__item">
-                                <a href="#">Aboute Trade</a>
-                            </li>
-                            <li class="lower-navigation__item">
-                                <a href="#">Preferences</a>
-                            </li>
-                            <li class="lower-navigation__item">
-                                <a href="#">Interactive services</a>
-                            </li>
-                            <li class="lower-navigation__item">
-                                <a href="#">Corporate governance</a>
-                            </li>
-                            <li class="lower-navigation__item">
-                                <a href="#">News</a>
-                            </li>
-                            <li class="lower-navigation__item">
-                                <a href="#">Contacts</a>
-                            </li>
-                            <div class="date">
-                                <p id="currentDateTime"></p>
+                                </form>
                             </div>
-                            <div class="lower-search-btn">
+                        </div>
+                        <div class="upper-right-navigation-items">
+                            <a href="index.html"><img src="./images/header-images/ipo.png" alt="IPO Partner image"></a>
+                            <a href="index.html" class="full-logo"><img src="./images/header-images/e-auction-shop.png" alt="E-Auction-Shop image"></a>
+                            <a href="index.html" class="hidden-logo"><img src="./images/header-images/e-auction-mini.png" alt="E-Auction-Shop image mini version"></a>
+                            <a href="index.html" class="full-logo"><img src="./images/header-images/assistant.png" alt="Assistant image"></a>
+                            <a href="index.html" class="hidden-logo"><img src="./images/header-images/assistant-mini.png" alt="assistant-mini"></a>
+                            <span class="demo-version">
+                                <i class="fa-solid fa-laptop"></i>
+                                <span class="hide-word">Demo</span>
+                            </span>
+                            <span class="eyeglasses-img">
+                                <img src="images/header-images/eyeglass.svg" alt="eyeglasses">
+                            </span>
+                            <div class="dropdown">
+                            <button class="dropbtn">
+                                <img src="images/header-images/en.png" alt="English">
+                                EN
+                                <i class="fa-solid fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                            <a href="#">
+                                <img src="images/header-images/uz.png" alt="Uzbek">
+                                Uzbek
+                            </a>
+                            <a href="#">
+                                <img src="images/header-images/ru.png" alt="Russian">
+                                Russian
+                            </a>
+                            <a href="#">
+                                <img src="images/header-images/en.png" alt="English">
+                                English
+                            </a>
+                            </div>
+                        </div>
+                            <span class="reg-button"><a href="registration.html">Register</a></span>
+                            <a href="authorization.html"><button type="button" class="sign-in-btn">Sign in</button></a>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+        <nav class="navigation-items">
+            <div class="container">
+                <ul class="lower-navigation__items">
+                    <li class="lower-navigation__item">
+                        <a href="lots.html">Lots</a>
+                    </li>
+                    <li class="lower-navigation__item">
+                        <a href="#">Help</a>
+                    </li>
+                    <li class="lower-navigation__item">
+                        <a href="#">Aboute Trade</a>
+                    </li>
+                    <li class="lower-navigation__item">
+                        <a href="#">Preferences</a>
+                    </li>
+                    <li class="lower-navigation__item">
+                        <a href="#">Interactive services</a>
+                    </li>
+                    <li class="lower-navigation__item">
+                        <a href="#">Corporate governance</a>
+                    </li>
+                    <li class="lower-navigation__item">
+                        <a href="#">News</a>
+                    </li>
+                    <li class="lower-navigation__item">
+                        <a href="#">Contacts</a>
+                    </li>
+                    <div class="full-search-bar search-bar">
+                        <form action="#" method="GET">
+                            <input type="text" name="search" class="search-input" id="search" placeholder="Lot number or property name">
+                            <button type="submit" class="search-button">
                                 <i class="fa-solid fa-magnifying-glass"></i>
-                            </div>
-                        </ul>
+                                <span class="hide-word">Search</span>
+                            </button>
+                        </form>
                     </div>
-                </nav>
+                    <div class="date">
+                        <p id="currentDateTime"></p>
+                    </div>
+                    <div class="lower-search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </ul>
+            </div>
+        </nav>
         </header>
     <!-- /Header section -->
 
@@ -369,6 +388,30 @@
                 </p>
             </section>
         </div>
+        <section class="footer-navigation-bar">
+            <div class="container">
+                <ul class="footer-navigation__items">
+                    <li class="footer-navigation-item">
+                        <a href="index.html">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="footer-navigation-item">
+                        <a href="registration.html">
+                            <i class="fa-solid fa-user-plus"></i>
+                            <span>Register</span>
+                        </a>
+                    </li>
+                    <li class="footer-navigation-item">
+                        <a href="authorization.html">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Login</span>
+                        </a>
+                    </li>
+                </ul>  
+            </div>              
+        </section>
     <!-- /Footer section -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

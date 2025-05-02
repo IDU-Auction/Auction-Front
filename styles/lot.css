@@ -133,7 +133,6 @@
 
 .lot-card-attribute__title span {
     margin-left: 0.625rem;
-    padding-right: 0.625rem;
     font-size: 0.875rem;
     font-weight: 300;
     color: #023581;
@@ -391,4 +390,43 @@
 .location iframe {
     width: 100%;
     height: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .lot {
+        flex-direction: column;
+    }
+    .lot-detail {
+        width: auto;
+    }
+    .extra-lot__detail {
+        width: auto;
+        margin-top: 1.875rem;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .main-lot-details {
+        flex-direction: column;
+    }
+    .lot-card__image {
+        width: auto;
+        height: auto;
+    }
+    .lot-card__details {
+        width: auto;
+        height: auto;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .d-flex {
+        flex-direction: column;
+    }
+    .lot-card__info {
+        width: auto;
+        padding-bottom: 1rem;
+    }
 }
