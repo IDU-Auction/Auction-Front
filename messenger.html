@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/messenger.css">
+</head>
+<body>
+    <!-- Main Messenger Section -->
+    <div class="container">
+        <section class="messenger">
+            <div class="chats">
+                <div class="searchbar">
+                    <div class="search-input">
+                        <input type="text" placeholder="Search or start new chat">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="ellipsis">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <div class="chat-list">
+                    <ul class="users">
+                        <li class="user active">
+                            <div class="user-info">
+                                <div class="profile-picture"><img src="./images/chat-images/user1.jpg" alt="User1"></div>
+                                <div class="user-name">Raul Fernanzed</div>  
+                            </div>    
+                        </li>
+                        <li class="user">
+                            <div class="user-info">
+                                <div class="profile-picture"><img src="./images/chat-images/user2.jpg" alt="User2"></div>
+                                <div class="user-name">Lilly Ash</div>    
+                            </div>   
+                        </li>
+                        <li class="user">
+                            <div class="user-info">
+                                <div class="profile-picture"><img src="./images/chat-images/user3.jpg" alt="User3"></div>
+                                <div class="user-name">Tyler Bird</div>   
+                            </div>    
+                        </li>
+                    </ul>
+                </div>
+                <div class="more-options">
+                    <div class="option">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>Notifications</span>
+                    </div>
+                    <div class="option">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>Calls</span>
+                    </div>
+                    <div class="option">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Contacts</span>
+                    </div>
+                </div>
+            </div>   
+            <div class="private-chat">
+                <div>Hi</div>
+            </div>  
+        </section>
+    </div>
+     <!-- /Main Messenger Section -->
+</body>
+</html>
