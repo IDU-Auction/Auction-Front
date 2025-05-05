@@ -289,6 +289,12 @@
     margin-bottom: 60px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
 .extra-lot-item {
     margin: 30px 20px 0 30px;
     position: relative;
@@ -358,7 +364,19 @@
     margin-top: 0;
 }
 
-.extra-lot-item button {
+.extra-lot-item input {
+    width: 50%;
+    height: 40px;
+    padding-left: 1rem;
+    border-radius: 5px;
+    border: 1px solid #023581;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    color: #000;
+    animation: 1s linear 0s infinite alternate none running redColor;
+}
+
+.apply-button {
     margin-top: 0.25rem;
     color: #ffffff;
     background-color: #023581;
@@ -370,9 +388,19 @@
     cursor: pointer;
 }
 
+.add-button {
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    width: 30%;
+    cursor: pointer;
+    height: 42px;
+    margin-left: 0.3125rem;
+    background-color: #023581;
+}
+
 .apply-link {
     margin-top: 1rem;
-
 }
 
 .apply-link a {

@@ -123,6 +123,9 @@
             </div>
         </nav>
         </header>
+        <button class="chat-button1">
+            <a href="messenger.html"><i class="fa-regular fa-message"></i></a>
+        </button>
     <!-- /Header section -->
 
     <!-- Lot section -->
@@ -158,14 +161,14 @@
                                         <img src="images/lot-detail-images/application_date_icon.png" alt="Application_daeadline">
                                         <span>Application Deadline</span>
                                     </div>
-                                    <div class="lot-card-attribute__value">23.05.2025 09:00</div>
+                                    <div class="lot-card-attribute__value">25.05.2025 09:00</div>
                                 </div>
                                 <div class="lot-card__info">
                                     <div class="lot-card-attribute__title">
                                         <img src="images/lot-detail-images/end_auction_date.png" alt="end auctions">
                                         <span>Auction time</span>
                                     </div>
-                                    <div class="lot-card-attribute__value">23.05.2025 09:00</div>
+                                    <div class="lot-card-attribute__value">25.05.2025 09:00</div>
                                 </div>
                             </div>
                             <div class="d-flex">
@@ -209,9 +212,9 @@
                                 <div class="lot-card__info">
                                     <div class="lot-card-attribute__title">
                                         <i class="fa-solid fa-list-ul"></i>
-                                        <span>First step (5%)</span>
+                                        <span>Current Price</span>
                                     </div>
-                                    <div class="lot-card-attribute__value">3 891 000 000.00 UZS</div>
+                                    <div class="lot-card-attribute__value" id="currentPrice">3 891 000 000.00 UZS</div>
                                 </div>
                             </div>
                             <div class="d-flex">
@@ -325,10 +328,19 @@
                                 <div class="exta-card__title">For participation</div>
                                 <div class="border"></div>
                                 <p>Please login to apply</p>
-                                <a href="authorization.html"><button type="button">Apply</button></a>
+                                <a href="authorization.html"><button type="button" class="apply-button">Apply</button></a>
                                 <div class="apply-link">
                                     <a href="authorization.html">How to apply to participate in the auction?</a>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="bg">
+                            <div class="extra-lot-item">
+                                <div class="exta-card__title">Enter your price</div>
+                                <div class="border"></div>
+                                <p>The price must be higher than Current Price</p>
+                                <input type="text" placeholder="Enter your price">
+                                <button type="button" class="add-button">Add</button>
                             </div>
                         </div>
                         <div class="bg">

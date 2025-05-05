@@ -40,5 +40,53 @@ function startCountdown(endDate) {
     setInterval(updateCountdown, 1000);
 }
 
-const deadline = new Date("March 23, 2025 23:59:59").getTime();
+const deadline = new Date("May 25, 2025 23:59:59").getTime();
 startCountdown(deadline);
+
+
+// Function to handle the "Place Bid" button click
+$(document).ready(function () {
+    const MIN_PRICE = 38910000000;
+
+    function formatNumberWithSpaces(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
+
+    function parseFormattedNumber(str) {
+        return parseInt(str.replace(/\s/g, ""), 10);
+    }
+
+    const $input = $(".extra-lot-item input");
+    const $currentPrice = $("#currentPrice");
+    const $addButton = $(".add-button");
+
+    // Initial check: enforce minimum price
+    let currentValue = parseFormattedNumber($currentPrice.text());
+    if (isNaN(currentValue) || currentValue < MIN_PRICE) {
+        currentValue = MIN_PRICE;
+        $currentPrice.text(formatNumberWithSpaces(currentValue) + ".00 UZS");
+    }
+
+    // Format input while typing
+    $input.on("input", function () {
+        let rawValue = parseFormattedNumber($(this).val());
+        if (isNaN(rawValue)) {
+            $(this).val("");
+            return;
+        }
+        $(this).val(formatNumberWithSpaces(rawValue));
+    });
+
+    // On button click, validate and update price
+    $addButton.on("click", function () {
+        let enteredValue = parseFormattedNumber($input.val());
+
+        if (!isNaN(enteredValue) && enteredValue > currentValue) {
+            currentValue = enteredValue;
+            $currentPrice.text(formatNumberWithSpaces(currentValue) + ".00 UZS");
+        } else {
+            alert("Please enter a value greater than the current price.");
+        }
+    });
+});
+
