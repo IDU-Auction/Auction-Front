@@ -61,8 +61,14 @@
             </div>   
             <div class="private-chat">
                 <div class="chat-header">
-                    <div class="username">Raul Fernanzed</div>
-                    <div class="userinfo-edit"><i class="fa-solid fa-user-pen"></i></div>
+                    <div class="user-info">
+                        <div class="username">Raul Fernanzed</div>
+                        <div class="userinfo-edit"><i class="fa-solid fa-user-pen"></i></div>
+                    </div>
+                    <div class="call-type">
+                        <button class="audio-call"><i class="fa-solid fa-phone"></i></button>
+                        <button class="video-call"><i class="fa-solid fa-video"></i></button>
+                    </div>
                 </div>
                 <div class="chat-message">
                     <div class="user-message">
@@ -86,41 +92,19 @@
                             <span class="time">10:35 AM</span>
                         </div>
                     </div>
-                    <div class="user-message">
-                        <div class="profile-picture">
-                            <img src="./images/chat-images/user1.jpg" alt="Profile Picture">
-                        </div>
-                        <div class="message">
-                            <p>Vestibulum viverra lacus, congue scelerisque neque. Viverra 
-                                cursus nisi, in purus dolor at. Nec sed eget scelerisque imperdiet
-                                 consectetur. Pellentesque aliquam id posuere massa aliquet. 
-                                 Pulvinar.
-                            </p>
-                            <span class="time">11:04 AM</span>
-                        </div>
-                    </div>
-                    <div class="my-message">
-                        <div class="message">
-                            <p> Donec lobortis mattis pellentesque nisl nibh eu. 
-                            </p>
-                            <span class="time">12:37 AM</span>
-                        </div>
-                    </div>
-                    <div class="user-message">
-                        <div class="profile-picture">
-                            <img src="./images/chat-images/user1.jpg" alt="Profile Picture">
-                        </div>
-                        <div class="message">
-                            <p>Ok, let's do it.
-                            </p>
-                            <span class="time">12:53 AM</span>
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <!-- <div class="calls"></div>   -->
+                <div class="chat-input">
+                    <input type="text" placeholder="Type a message..." />
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    <label for="fileUpload" class="file-upload-icon">
+                        <i class="fa-solid fa-paperclip"></i>
+                    </label>
+                    <input type="file" id="fileUpload" style="display: none" />
+                </div>
+            </div> 
         </section>
     </div>
      <!-- /Main Messenger Section -->
+    <script src="./js/messenger.js"></script>
 </body>
 </html>
